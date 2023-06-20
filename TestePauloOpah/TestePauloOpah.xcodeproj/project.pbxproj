@@ -27,6 +27,18 @@
 		8CAFAA052A282DD80040AA97 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA042A282DD80040AA97 /* MainViewModel.swift */; };
 		8CAFAA062A282DD80040AA97 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA042A282DD80040AA97 /* MainViewModel.swift */; };
 		8CAFAA072A282DD80040AA97 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA042A282DD80040AA97 /* MainViewModel.swift */; };
+		8CAFAA092A2978E90040AA97 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA082A2978E90040AA97 /* Login.swift */; };
+		8CAFAA0A2A2978E90040AA97 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA082A2978E90040AA97 /* Login.swift */; };
+		8CAFAA0B2A2978E90040AA97 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA082A2978E90040AA97 /* Login.swift */; };
+		8CAFAA0D2A297A850040AA97 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA0C2A297A850040AA97 /* GitHubService.swift */; };
+		8CAFAA0E2A297A850040AA97 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA0C2A297A850040AA97 /* GitHubService.swift */; };
+		8CAFAA0F2A297A850040AA97 /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA0C2A297A850040AA97 /* GitHubService.swift */; };
+		8CAFAA122A297AB80040AA97 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA112A297AB80040AA97 /* ServiceFactory.swift */; };
+		8CAFAA132A297AB80040AA97 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA112A297AB80040AA97 /* ServiceFactory.swift */; };
+		8CAFAA142A297AB80040AA97 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA112A297AB80040AA97 /* ServiceFactory.swift */; };
+		8CAFAA162A4094010040AA97 /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA152A4094010040AA97 /* Alamofire+Extensions.swift */; };
+		8CAFAA172A4094010040AA97 /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA152A4094010040AA97 /* Alamofire+Extensions.swift */; };
+		8CAFAA182A4094010040AA97 /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFAA152A4094010040AA97 /* Alamofire+Extensions.swift */; };
 		8CEC48D22A27EFF700F7E0B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC48D12A27EFF700F7E0B3 /* AppDelegate.swift */; };
 		8CEC48D42A27EFF700F7E0B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC48D32A27EFF700F7E0B3 /* SceneDelegate.swift */; };
 		8CEC48D62A27EFF700F7E0B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEC48D52A27EFF700F7E0B3 /* ViewController.swift */; };
@@ -63,6 +75,10 @@
 		8CAFA9F02A282A120040AA97 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8CAFA9F12A282A120040AA97 /* GitHubMoyaTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubMoyaTarget.swift; sourceTree = "<group>"; };
 		8CAFAA042A282DD80040AA97 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8CAFAA082A2978E90040AA97 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		8CAFAA0C2A297A850040AA97 /* GitHubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHubService.swift; path = "../../../../../testeOpah - cópia/carrefourtest/TestePauloOpah/TestePauloOpah/Services/GitHubService.swift"; sourceTree = "<group>"; };
+		8CAFAA112A297AB80040AA97 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		8CAFAA152A4094010040AA97 /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
 		8CEC48CE2A27EFF700F7E0B3 /* TestePauloOpah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestePauloOpah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEC48D12A27EFF700F7E0B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEC48D32A27EFF700F7E0B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CAFAA102A297AA00040AA97 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8CAFAA112A297AB80040AA97 /* ServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		8CEC48C52A27EFF700F7E0B3 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +155,7 @@
 		8CEC48D02A27EFF700F7E0B3 /* TestePauloOpah */ = {
 			isa = PBXGroup;
 			children = (
+				8CAFAA102A297AA00040AA97 /* Factory */,
 				8CEC49072A27F06000F7E0B3 /* Extensions */,
 				8CEC49062A27F05A00F7E0B3 /* Views */,
 				8CEC49052A27F04F00F7E0B3 /* ViewModels */,
@@ -175,6 +200,7 @@
 		8CEC49032A27F04000F7E0B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8CAFAA0C2A297A850040AA97 /* GitHubService.swift */,
 				8CAFA9F02A282A120040AA97 /* Configuration.swift */,
 				8CAFA9F12A282A120040AA97 /* GitHubMoyaTarget.swift */,
 			);
@@ -184,6 +210,7 @@
 		8CEC49042A27F04700F7E0B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8CAFAA082A2978E90040AA97 /* Login.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +235,7 @@
 		8CEC49072A27F06000F7E0B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8CAFAA152A4094010040AA97 /* Alamofire+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,12 +381,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFAA162A4094010040AA97 /* Alamofire+Extensions.swift in Sources */,
 				8CEC48D62A27EFF700F7E0B3 /* ViewController.swift in Sources */,
+				8CAFAA092A2978E90040AA97 /* Login.swift in Sources */,
 				8CAFA9F52A282A120040AA97 /* GitHubMoyaTarget.swift in Sources */,
 				8CAFA9ED2A28264E0040AA97 /* MainCoordinator.swift in Sources */,
 				8CAFA9F22A282A120040AA97 /* Configuration.swift in Sources */,
+				8CAFAA0D2A297A850040AA97 /* GitHubService.swift in Sources */,
 				8CEC48D22A27EFF700F7E0B3 /* AppDelegate.swift in Sources */,
 				8CAFA9E92A2825FF0040AA97 /* DetailViewController.swift in Sources */,
+				8CAFAA122A297AB80040AA97 /* ServiceFactory.swift in Sources */,
 				8CEC48D42A27EFF700F7E0B3 /* SceneDelegate.swift in Sources */,
 				8CEC49092A27F09E00F7E0B3 /* MainViewController.swift in Sources */,
 				8CAFAA052A282DD80040AA97 /* MainViewModel.swift in Sources */,
@@ -369,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFAA132A297AB80040AA97 /* ServiceFactory.swift in Sources */,
 				8CAFAA062A282DD80040AA97 /* MainViewModel.swift in Sources */,
 				8CAFA9EA2A2825FF0040AA97 /* DetailViewController.swift in Sources */,
 				8CAFA9F62A282A120040AA97 /* GitHubMoyaTarget.swift in Sources */,
@@ -376,6 +409,9 @@
 				8CAFA9EE2A28264E0040AA97 /* MainCoordinator.swift in Sources */,
 				8CEC48E92A27EFFC00F7E0B3 /* TestePauloOpahTests.swift in Sources */,
 				8CEC490A2A27F09E00F7E0B3 /* MainViewController.swift in Sources */,
+				8CAFAA0E2A297A850040AA97 /* GitHubService.swift in Sources */,
+				8CAFAA172A4094010040AA97 /* Alamofire+Extensions.swift in Sources */,
+				8CAFAA0A2A2978E90040AA97 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,12 +419,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFAA0F2A297A850040AA97 /* GitHubService.swift in Sources */,
 				8CAFA9F42A282A120040AA97 /* Configuration.swift in Sources */,
 				8CEC490B2A27F09E00F7E0B3 /* MainViewController.swift in Sources */,
 				8CEC48F52A27EFFC00F7E0B3 /* TestePauloOpahUITestsLaunchTests.swift in Sources */,
+				8CAFAA182A4094010040AA97 /* Alamofire+Extensions.swift in Sources */,
+				8CAFAA142A297AB80040AA97 /* ServiceFactory.swift in Sources */,
 				8CEC48F32A27EFFC00F7E0B3 /* TestePauloOpahUITests.swift in Sources */,
 				8CAFA9EF2A28264E0040AA97 /* MainCoordinator.swift in Sources */,
 				8CAFA9EB2A2825FF0040AA97 /* DetailViewController.swift in Sources */,
+				8CAFAA0B2A2978E90040AA97 /* Login.swift in Sources */,
 				8CAFA9F72A282A120040AA97 /* GitHubMoyaTarget.swift in Sources */,
 				8CAFAA072A282DD80040AA97 /* MainViewModel.swift in Sources */,
 			);

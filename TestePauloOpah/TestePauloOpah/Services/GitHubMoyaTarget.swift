@@ -22,8 +22,8 @@ extension SendRequest {
     
     public var path: String{
         switch self {
-        case .search:
-            return "search/users?q=user:%@"
+        case .search(let param):
+            return "search/users"
         case .detail:
             return "users/%@"
         case .list:
@@ -41,13 +41,25 @@ extension SendRequest {
             return .get
         }
     }
+
+    
     
     public var task: Moya.Task {
-        return .requestParameters(parameters: [:], encoding: URLEncoding.default)
+        switch self {
+        case .search(let param):
+            let parameters : [String: String] = ["q" : String(format:"user:%@", param )]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case .detail(let id ):
+            let parameters : [String: String] = ["id" : id]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case .list:
+            let parameters = [String: String]()
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        }
     }
     
     public var headers: [String : String]?{
-        return ["Content-type": "application/json"]
+        return ["Content-type": "text/plain"]
     }
     
     public var sampleData: Data {
