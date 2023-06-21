@@ -35,12 +35,16 @@ public struct Login: Codable, Equatable {
     let login :  String
     let avatar_url :  String?
     let html_url :  String?
+    let repos_url  : String?
+    let url  : String?
     
     enum CodingKeys: String, CodingKey {
         case login
         case id
         case avatar_url
         case html_url
+        case repos_url
+        case url
     }
     
     public init(from decoder: Decoder) throws {
@@ -49,6 +53,8 @@ public struct Login: Codable, Equatable {
         login = try container.decode(String.self, forKey: .login)
         avatar_url = try container.decode(String.self, forKey: .avatar_url)
         html_url = try container.decode(String.self, forKey: .html_url)
+        repos_url = try container.decode(String.self, forKey: .repos_url)
+        url = try container.decode(String.self, forKey: .url)
     }
 }
 

@@ -18,6 +18,8 @@ protocol MainViewModel{
     func getLogin(position : Int)->Login
 
     func findLogins(text : String) async
+    
+    func openDetail(id : String)
 }
 
 class MainGitHubViewModel{
@@ -70,5 +72,9 @@ class MainGitHubViewModel{
         return users[position]
     }
 
+    
+    public func openDetail(id : String){
+        MainCoordinator.instance.openDetail(id: id)
+    }
     
 }

@@ -38,9 +38,6 @@ extension MoyaProvider {
         
         func requestArray<T: Codable>(_ target: Target, retType : T.Type) async throws -> RequestResult {
             return try await withCheckedThrowingContinuation { continuation in
-                print(target.baseURL)
-                print(target.path)
-                print(target.method)
                 provider.request(target) { result in
                     switch result {
                     case .success(let response):

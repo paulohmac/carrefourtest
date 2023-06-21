@@ -12,6 +12,7 @@ public enum SendRequest : TargetType{
     case search(param : String)
     case detail(id : String)
     case list
+    case repos(user : String)
 }
 
 extension SendRequest {
@@ -22,12 +23,14 @@ extension SendRequest {
     
     public var path: String{
         switch self {
-        case .search(let param):
+        case .search:
             return "search/users"
-        case .detail:
-            return "users/%@"
+        case .detail(let name):
+            return String(format:"users/%@", name)
         case .list:
             return "users"
+        case .repos(let user):
+            return String(format:"users/%@/repos", user)
         }
     }
     
@@ -36,24 +39,21 @@ extension SendRequest {
         case .search:
             return .get
         case .detail:
-            return .post
+            return .get
         case .list:
+            return .get
+        case .repos:
             return .get
         }
     }
-
-    
     
     public var task: Moya.Task {
+        var parameters = [String: String]()
         switch self {
         case .search(let param):
-            let parameters : [String: String] = ["q" : String(format:"user:%@", param )]
+            parameters["q"] = String(format:"user:%@", param )
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
-        case .detail(let id ):
-            let parameters : [String: String] = ["id" : id]
-            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
-        case .list:
-            let parameters = [String: String]()
+        case .detail,.list,.repos:
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
     }

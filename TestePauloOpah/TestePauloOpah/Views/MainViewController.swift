@@ -90,7 +90,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
    }
      
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         MainCoordinator.getInstance().openDetail(id: "/(viewModel.getLogin(position: indexPath.row).id")
+         
+         viewModel.openDetail(id: "\(viewModel.getLogin(position: indexPath.row).login)")
+//         MainCoordinator.getInstance().openDetail(id: "/(viewModel.getLogin(position: indexPath.row).id")
      }
 }
 

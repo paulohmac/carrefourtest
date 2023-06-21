@@ -32,7 +32,10 @@ class MainCoordinator : Coordinator {
     
     public func openDetail(id: String){
         let detailViewController  = DetailViewController()
+        detailViewController.idLogin = id
+        detailViewController.viewModel = DetailGitViewModel(factory: ServiceFactory())
         getRootViewController().pushViewController(detailViewController, animated: true)
+        
     }
     
 }
