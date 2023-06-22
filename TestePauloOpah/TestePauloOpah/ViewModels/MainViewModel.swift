@@ -36,7 +36,7 @@ class MainGitHubViewModel{
     func listUser() async{
         do{
             let ret = try await service.perfomrRequest(action: .list)
-            if case let .sucess(data) = ret,let logins = data as? [Login]  {
+            if case let .success(data) = ret,let logins = data as? [Login]  {
                 users = logins
             }else if case let .error(error) = ret {
                 showError(error: error.localizedDescription)
@@ -49,7 +49,7 @@ class MainGitHubViewModel{
     func findLogins(text : String) async{
         do{
             let ret = try await service.perfomrRequest(action: .search(param: text))
-            if case let .sucess(data) = ret,let logins = data as? SearchResult  {
+            if case let .success(data) = ret,let logins = data as? SearchResult  {
                 users = logins.items
             }else if case let .error(error) = ret {
                 showError(error: error.localizedDescription)
@@ -61,7 +61,6 @@ class MainGitHubViewModel{
     
     public func showError(error : String){
         print(error)
-
     }
     
     public func getTotalLogins()->Int{
@@ -72,7 +71,6 @@ class MainGitHubViewModel{
         return users[position]
     }
 
-    
     public func openDetail(id : String){
         MainCoordinator.instance.openDetail(id: id)
     }

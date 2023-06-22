@@ -27,7 +27,9 @@ class MainCoordinator : Coordinator {
     static var instance: Coordinator = MainCoordinator()
     
     private func getRootViewController()->UINavigationController{
-        return UIApplication.shared.windows.first?.rootViewController as? UINavigationController ?? UINavigationController()
+        let scenes = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let window = scenes?.windows.last
+        return window?.rootViewController as? UINavigationController ?? UINavigationController()
     }
     
     public func openDetail(id: String){
@@ -35,7 +37,6 @@ class MainCoordinator : Coordinator {
         detailViewController.idLogin = id
         detailViewController.viewModel = DetailGitViewModel(factory: ServiceFactory())
         getRootViewController().pushViewController(detailViewController, animated: true)
-        
     }
     
 }

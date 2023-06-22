@@ -11,9 +11,13 @@ import UIKit
 protocol DetailViewModel {
     var user : String {get}
 
+    var repos : [Repo]? {get}
+
     var userDetail: Login? {get}
 
     func getUserDetail(user : String) async
+    
+    func getUserRepos(user : String) async
     
 }
 
@@ -25,6 +29,9 @@ extension DetailViewModel{
 }
 
 class DetailGitViewModel : DetailViewModel{
+
+    var repos : [Repo]?
+
     private let service : GitHubService
     
     internal var user = ""
@@ -40,7 +47,7 @@ class DetailGitViewModel : DetailViewModel{
     func getUserDetail(user : String) async{
         do{
             let ret = try await service.perfomrRequest(action: .detail(id: user))
-            if case let .sucess(data) = ret,let lgn = data as? Login  {
+            if case let .success(data) = ret,let lgn = data as? Login  {
                 userDetail = lgn
             }else if case let .error(error) = ret {
                 showError(error: error.localizedDescription)
@@ -52,9 +59,9 @@ class DetailGitViewModel : DetailViewModel{
     
     func getUserRepos(user : String) async{
         do{
-            let ret = try await service.perfomrRequest(action: .detail(id: user))
-            if case let .sucess(data) = ret,let lgn = data as? Login  {
-                userDetail = lgn
+            let ret = try await service.perfomrRequest(action: .repos(user: user))
+            if case let .success(data) = ret,let lgn = data as? [Repo]  {
+                repos = lgn
             }else if case let .error(error) = ret {
                 showError(error: error.localizedDescription)
             }
@@ -63,9 +70,7 @@ class DetailGitViewModel : DetailViewModel{
         }
     }
     
-    
     public func showError(error : String){
         print(error)
-
     }
 }

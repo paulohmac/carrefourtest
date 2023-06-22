@@ -10,40 +10,27 @@ import Stevia
 import Alamofire
 import AlamofireImage
 
-class DetailViewController: UIViewController {
-    public var idLogin : String = ""
-    
-    var safeArea: UILayoutGuide!
-    
+class DetailViewController: BaseViewController {
     public var viewModel : DetailViewModel?
 
-    let activityView = UIActivityIndicatorView(style: .large)
-
-    let headerStack = UIStackView ()
+    private let headerStack = UIStackView ()
+    public var idLogin : String = ""
     
-    let tableView = UITableView()
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        safeArea = view.layoutMarginsGuide
-        
-        view.backgroundColor = .white
         loadData()
-       
         setupTableView()
         setupHeader()
-        
-        headerStack.axis = .vertical
-        headerStack.alignment = .leading
-
-        headerStack.backgroundColor = UIColor.blue
-        tableView.backgroundColor = UIColor.green
     }
 
-    func setupHeader(){
+    private func setupHeader(){
+        headerStack.axis = .vertical
+        headerStack.alignment = .leading
+        headerStack.isLayoutMarginsRelativeArrangement = true
+        headerStack.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+        headerStack.distribution = .fill
         view.addSubview(headerStack)
+
         headerStack.translatesAutoresizingMaskIntoConstraints = false
         headerStack.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16).isActive = true
         headerStack.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -51,12 +38,12 @@ class DetailViewController: UIViewController {
         headerStack.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
     
-    func setupTableView() {
+    private func setupTableView() {
         view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
@@ -64,72 +51,89 @@ class DetailViewController: UIViewController {
         tableView.delegate = self
       }
     
-    func loadData(){
+    private func loadData(){
         Task {
-            activityIndicatorShould(apper: true)
+            activityIndicatorShould(appear: true)
             await viewModel?.getUserDetail(user: idLogin)
-            activityIndicatorShould(apper: false)
+            activityIndicatorShould(appear: false)
             configUserData()
         }
         Task {
-            activityIndicatorShould(apper: true)
-            await viewModel?.getUserDetail(user: idLogin)
-            activityIndicatorShould(apper: false)
-            configUserData()
+            activityIndicatorShould(appear: true)
+            await viewModel?.getUserRepos(user: idLogin)
+            activityIndicatorShould(appear: false)
+            showRepos()
         }
     }
-    
-    private func activityIndicatorShould(apper: Bool){
-        if apper {
-            activityView.center = self.view.center
-            self.view.addSubview(activityView)
-            activityView.startAnimating()
-        }else{
-            activityView.stopAnimating()
-            activityView.removeFromSuperview()
-        }
-    }
-    
-    func configUserData(){
 
+    private func configUserData(){
+
+        let stackViewFrame = UIStackView()
+        stackViewFrame.axis = .horizontal
+        
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.alignment = .leading
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0)
+        
         let namelbl = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
         namelbl.center = CGPoint(x: 160, y: 285)
         namelbl.textAlignment = .center
-        namelbl.text = "Login:" + idLogin
-        headerStack.addArrangedSubview(namelbl)
-
+        namelbl.text = idLogin
+        stackView.addArrangedSubview(namelbl)
         
         let urllbl = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
         urllbl.center = CGPoint(x: 160, y: 285)
         urllbl.textAlignment = .center
-        urllbl.text = "Url:" +  (viewModel?.userDetail?.url ?? "")
-        headerStack.addArrangedSubview(urllbl)
-
+        urllbl.text = (viewModel?.userDetail?.url ?? "")
+        stackView.addArrangedSubview(urllbl)
+        
         let avatar = UIImage()
-        let imageView = UIImageView(image: avatar)
-        let downloadURL = URL(string: viewModel?.userDetail?.avatar_url ?? "")!
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.image = avatar
+        imageView.layer.cornerRadius = imageView.layer.bounds.height / 2
+        imageView.contentMode = .scaleToFill
+        imageView.layer.borderWidth = 0.5
+        imageView.layer.masksToBounds = false
+        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.cornerRadius = 25
+        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFill
+        imageView.height(50)
+        imageView.width(50)
+
+        stackViewFrame.addArrangedSubview(imageView)
+        stackViewFrame.addArrangedSubview(stackView)
+        headerStack.addArrangedSubview(stackViewFrame)
+
+        let downloadURL = URL(string: viewModel?.userDetail?.avatarUrl ?? "")!
         imageView.af.setImage(withURL: downloadURL)
         headerStack.addArrangedSubview(imageView)
 
     }
+    
+    private func showRepos(){
+        tableView.reloadData()
+    }
 }
 
-
 extension DetailViewController : UITableViewDataSource, UITableViewDelegate{
-   
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//      return viewModel.getTotalLogins()
-      return 1
-  }
-
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-      cell.textLabel?.text = "jiban"
-    return cell
-  }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel?.repos?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = viewModel?.repos?[indexPath.row].url
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-//        viewModel.openDetail(id: "/(viewModel.getLogin(position: indexPath.row).login)")
+        print ( viewModel?.repos?[indexPath.row].url ?? "")
+        if let urlOpned = URL(string: viewModel?.repos?[indexPath.row].htmlUrl ?? ""), UIApplication.shared.canOpenURL(urlOpned) {
+            UIApplication.shared.open(urlOpned)
+        }
     }
 }

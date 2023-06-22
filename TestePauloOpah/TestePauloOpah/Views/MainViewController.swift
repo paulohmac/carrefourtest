@@ -7,15 +7,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
-    let tableView = UITableView()
-    var safeArea: UILayoutGuide!
-    var sampleTextField = UITextField()
-    
-    lazy var viewModel = MainGitHubViewModel(factory: ServiceFactory())
-    
-    let activityView = UIActivityIndicatorView(style: .large)
-    
+class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
+    private var sampleTextField = UITextField()
+    private lazy var viewModel = MainGitHubViewModel(factory: ServiceFactory())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +20,20 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         loadData()
     }
 
-    func loadData(){
+    private func loadData(){
         Task {
-            activityIndicatorShould(apper: true)
+            activityIndicatorShould(appear: true)
             await viewModel.listUser()
             tableView.reloadData()
-            activityIndicatorShould(apper: false)
+            activityIndicatorShould(appear: false)
         }
     }
     
-    
-    func setupTableView() {
+    private func setupTableView() {
         view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        tableView.topAnchor.constraint(equalTo: sampleTextField.bottomAnchor, constant: 16).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
@@ -49,7 +41,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
       }
     
-    func setupEditText(){
+    private func setupEditText(){
         sampleTextField =  UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
         sampleTextField.placeholder = "Enter text here"
         sampleTextField.font = UIFont.systemFont(ofSize: 15)
@@ -60,21 +52,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         sampleTextField.clearButtonMode = UITextField.ViewMode.whileEditing
         sampleTextField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         sampleTextField.delegate = self
+
+        sampleTextField.top(8)
+        sampleTextField.right(16)
+        sampleTextField.left(16)
         self.view.addSubview(sampleTextField)
     }
-    
-    
-    
-    private func activityIndicatorShould(apper: Bool){
-        if apper {
-            activityView.center = self.view.center
-            self.view.addSubview(activityView)
-            activityView.startAnimating()
-        }else{
-            activityView.stopAnimating()
-            activityView.removeFromSuperview()
-        }
-    }
+  
 }
 
  extension MainViewController {
@@ -90,9 +74,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
    }
      
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         
          viewModel.openDetail(id: "\(viewModel.getLogin(position: indexPath.row).login)")
-//         MainCoordinator.getInstance().openDetail(id: "/(viewModel.getLogin(position: indexPath.row).id")
      }
 }
 
@@ -100,7 +82,6 @@ extension MainViewController : UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
         let updatedString = (textField.text as NSString?)?.replacingCharacters(in: range, with: string)
-        
         if updatedString?.count ?? 0 >= 5 && updatedString != "" {
             Task {
                 await viewModel.findLogins(text: updatedString ?? "")
