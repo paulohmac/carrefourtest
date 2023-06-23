@@ -10,21 +10,28 @@ import UIKit
 
 protocol Coordinator{
     
-    static var instance : Coordinator{ get }
+    var spy : CoordinatorSpy?{get set}
 
     func openDetail(id: String)
     
+    static func getInstance()->Coordinator
+
 }
 
-extension Coordinator{
-
-    static func getInstance()->Coordinator{
-      return instance
-    }
+protocol CoordinatorSpy{
+    
+    func detailViewControllerOpened()
 }
 
 class MainCoordinator : Coordinator {
-    static var instance: Coordinator = MainCoordinator()
+
+    static func getInstance() -> Coordinator {
+        return MainCoordinator()
+    }
+    
+    var spy: CoordinatorSpy?
+    
+    private static var instance: Coordinator = MainCoordinator()
     
     private func getRootViewController()->UINavigationController{
         let scenes = UIApplication.shared.connectedScenes.first as? UIWindowScene
@@ -37,6 +44,7 @@ class MainCoordinator : Coordinator {
         detailViewController.idLogin = id
         detailViewController.viewModel = DetailGitViewModel(factory: ServiceFactory())
         getRootViewController().pushViewController(detailViewController, animated: true)
+        spy?.detailViewControllerOpened()
     }
     
 }

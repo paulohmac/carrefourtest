@@ -17,7 +17,6 @@ final class TestePauloOpahTests: XCTestCase {
     override func setUpWithError() throws {
         serviceFactory =  ServiceFactory()
         provider = MoyaProvider<SendRequest>()
-//        serviceFactory = ServiceFactory
     }
     
     func testServiceFactory(){
@@ -27,7 +26,7 @@ final class TestePauloOpahTests: XCTestCase {
     func testMoyaProvider()async throws{
         XCTAssertNotNil(provider?.async, "testMoyProvider async instance not null fail")
         
-        var ret = try await provider?.async.sendRequest(SendRequest.search(param: "mojombo"), retType: SearchResult.self)
+        let ret = try await provider?.async.sendRequest(SendRequest.search(param: "mojombo"), retType: SearchResult.self)
         XCTAssertNotNil(ret,  "MoyaProvider return is nil")
 
         var typeChecking = false
@@ -41,8 +40,6 @@ final class TestePauloOpahTests: XCTestCase {
             XCTAssertTrue(false,  "Provider dont return throws when we send invalid user")
         }catch{
         }
-
-        class StubCodable: Codable{}
         
         do{
             _ = try await provider?.async.sendRequest(SendRequest.search(param: "mojombo"), retType: StubCodable.self)
@@ -51,20 +48,9 @@ final class TestePauloOpahTests: XCTestCase {
         }
     }
     
-    
-    
-
     override func tearDownWithError() throws {
         serviceFactory = nil
         provider = nil
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
     func testPerformanceExample() throws {
@@ -75,3 +61,5 @@ final class TestePauloOpahTests: XCTestCase {
     }
 
 }
+
+class StubCodable: Codable{}

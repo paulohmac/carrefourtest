@@ -69,12 +69,12 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
 
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-       cell.textLabel?.text = viewModel.getLogin(position: indexPath.row).login
+       cell.textLabel?.text = viewModel.getLogin(position: indexPath.row)?.login
      return cell
    }
      
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         viewModel.openDetail(id: "\(viewModel.getLogin(position: indexPath.row).login)")
+         viewModel.openDetail(id: "\(viewModel.getLogin(position: indexPath.row)?.login)")
      }
 }
 

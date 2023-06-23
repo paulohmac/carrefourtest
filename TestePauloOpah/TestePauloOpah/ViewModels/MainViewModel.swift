@@ -11,25 +11,30 @@ protocol MainViewModel{
 
     func listUser() async
 
-    var users : [Login] {get}
+    var users : [Login]? {get}
 
     func getTotalLogins()->Int
 
-    func getLogin(position : Int)->Login
+    func getLogin(position : Int)->Login?
 
     func findLogins(text : String) async
     
     func openDetail(id : String)
+    
+    init(factory : Factory)
+    
+    
 }
 
-class MainGitHubViewModel{
-    private let service : GitHubService
+class MainGitHubViewModel : MainViewModel{
     
-    private var users = [Login]()
+    private let service : GitHubService
+
+    internal var users : [Login]?  
     
     private var loading : Bool = false
     
-    init(factory : Factory) {
+    required init(factory : Factory) {
         self.service = factory.getService()
     }
     
@@ -64,15 +69,19 @@ class MainGitHubViewModel{
     }
     
     public func getTotalLogins()->Int{
-        return users.count
+        return users?.count ?? 0
     }
 
-    public func getLogin(position : Int)->Login{
-        return users[position]
+    public func getLogin(position : Int)->Login?{
+        if ((users?.count ?? 0)-1 ) >= position{
+            return users?[position]
+        }else{
+            return nil
+        }
     }
 
     public func openDetail(id : String){
-        MainCoordinator.instance.openDetail(id: id)
+        MainCoordinator.getInstance().openDetail(id: id)
     }
     
 }
