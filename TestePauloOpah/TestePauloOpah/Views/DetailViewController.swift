@@ -108,9 +108,11 @@ class DetailViewController: BaseViewController {
         stackViewFrame.addArrangedSubview(stackView)
         headerStack.addArrangedSubview(stackViewFrame)
 
-        let downloadURL = URL(string: viewModel?.userDetail?.avatarUrl ?? "")!
-        imageView.af.setImage(withURL: downloadURL)
-        headerStack.addArrangedSubview(imageView)
+        let downloadURL = URL(string: viewModel?.userDetail?.avatarUrl ?? "")
+        if let downloadURL = downloadURL{
+            imageView.af.setImage(withURL: downloadURL)
+            headerStack.addArrangedSubview(imageView)
+        }
 
     }
     

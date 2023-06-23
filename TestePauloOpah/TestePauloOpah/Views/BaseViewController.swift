@@ -37,10 +37,12 @@ class BaseViewController: UIViewController {
 
 extension BaseViewController: ErrorHandling{
     func showError(msg : Error){
-        let alert = UIAlertController(title: "Erro", message: msg.localizedDescription, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-        }))
-        self.present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Erro", message: msg.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
 
