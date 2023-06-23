@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
-    private var sampleTextField = UITextField()
+    private var searchTextField = UITextField()
     private lazy var viewModel = MainGitHubViewModel(factory: ServiceFactory())
     
     override func viewDidLoad() {
@@ -25,39 +25,39 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         Task {
             activityIndicatorShould(appear: true)
             await viewModel.listUser()
-            tableView.reloadData()
+            resultTableView.reloadData()
             activityIndicatorShould(appear: false)
         }
     }
     
     private func setupTableView() {
-        view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: sampleTextField.bottomAnchor, constant: 16).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        tableView.dataSource = self
-        tableView.delegate = self
+        view.addSubview(resultTableView)
+        resultTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        resultTableView.translatesAutoresizingMaskIntoConstraints = false
+        resultTableView.topAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: 16).isActive = true
+        resultTableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        resultTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        resultTableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        resultTableView.dataSource = self
+        resultTableView.delegate = self
       }
     
     private func setupEditText(){
-        sampleTextField =  UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
-        sampleTextField.placeholder = "Enter text here"
-        sampleTextField.font = UIFont.systemFont(ofSize: 15)
-        sampleTextField.borderStyle = UITextField.BorderStyle.roundedRect
-        sampleTextField.autocorrectionType = UITextAutocorrectionType.no
-        sampleTextField.keyboardType = UIKeyboardType.default
-        sampleTextField.returnKeyType = UIReturnKeyType.done
-        sampleTextField.clearButtonMode = UITextField.ViewMode.whileEditing
-        sampleTextField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
-        sampleTextField.delegate = self
+        searchTextField =  UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
+        searchTextField.placeholder = "Enter text here"
+        searchTextField.font = UIFont.systemFont(ofSize: 15)
+        searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        searchTextField.autocorrectionType = UITextAutocorrectionType.no
+        searchTextField.keyboardType = UIKeyboardType.default
+        searchTextField.returnKeyType = UIReturnKeyType.done
+        searchTextField.clearButtonMode = UITextField.ViewMode.whileEditing
+        searchTextField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+        searchTextField.delegate = self
 
-        sampleTextField.top(8)
-        sampleTextField.right(16)
-        sampleTextField.left(16)
-        self.view.addSubview(sampleTextField)
+        searchTextField.top(8)
+        searchTextField.right(16)
+        searchTextField.left(16)
+        self.view.addSubview(searchTextField)
     }
   
 }
@@ -86,7 +86,7 @@ extension MainViewController : UITextFieldDelegate {
         if updatedString?.count ?? 0 >= 5 && updatedString != "" {
             Task {
                 await viewModel.findLogins(text: updatedString ?? "")
-                tableView.reloadData()
+                resultTableView.reloadData()
             }
         }
         return true

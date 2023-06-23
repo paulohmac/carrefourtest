@@ -44,7 +44,7 @@ class MainGitHubViewModel : MainViewModel{
     
     func listUser() async{
         do{
-            let ret = try await service.perfomrRequest(action: .list)
+            let ret = try await service.performRequest(action: .list)
             if case let .success(data) = ret,let logins = data as? [Login]  {
                 users = logins
             }else if case let .error(error) = ret {
@@ -57,7 +57,7 @@ class MainGitHubViewModel : MainViewModel{
 
     func findLogins(text : String) async{
         do{
-            let ret = try await service.perfomrRequest(action: .search(param: text))
+            let ret = try await service.performRequest(action: .search(param: text))
             if case let .success(data) = ret,let logins = data as? SearchResult  {
                 users = logins.items
             }else if case let .error(error) = ret {

@@ -50,7 +50,7 @@ class DetailGitViewModel : DetailViewModel{
     
     func getUserDetail(user : String) async{
         do{
-            let ret = try await service.perfomrRequest(action: .detail(id: user))
+            let ret = try await service.performRequest(action: .detail(id: user))
             if case let .success(data) = ret,let lgn = data as? Login  {
                 userDetail = lgn
             }else if case let .error(error) = ret {
@@ -63,7 +63,7 @@ class DetailGitViewModel : DetailViewModel{
     
     func getUserRepos(user : String) async{
         do{
-            let ret = try await service.perfomrRequest(action: .repos(user: user))
+            let ret = try await service.performRequest(action: .repos(user: user))
             if case let .success(data) = ret,let lgn = data as? [Repo]  {
                 repos = lgn
             }else if case let .error(error) = ret {

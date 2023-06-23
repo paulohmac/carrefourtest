@@ -28,5 +28,4 @@ struct UserDetail:  Codable, Equatable {
         htmlUrl = try container.decode(String.self, forKey: .htmlUrl)
     }
     
-    
 }

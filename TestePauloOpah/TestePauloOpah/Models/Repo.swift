@@ -31,5 +31,4 @@ struct Repo: Codable, Equatable {
         description = try? container.decode(String.self, forKey: .description)
         url = try? container.decode(String.self, forKey: .url)
     }
-    
 }

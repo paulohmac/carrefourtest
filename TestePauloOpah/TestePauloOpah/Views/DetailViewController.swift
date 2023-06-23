@@ -35,21 +35,21 @@ class DetailViewController: BaseViewController {
         headerStack.translatesAutoresizingMaskIntoConstraints = false
         headerStack.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16).isActive = true
         headerStack.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        headerStack.bottomAnchor.constraint(equalTo: tableView.topAnchor).isActive = true
+        headerStack.bottomAnchor.constraint(equalTo: resultTableView.topAnchor).isActive = true
         headerStack.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
     
     private func setupTableView() {
-        view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        view.addSubview(resultTableView)
+        resultTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        tableView.dataSource = self
-        tableView.delegate = self
+        resultTableView.translatesAutoresizingMaskIntoConstraints = false
+        resultTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
+        resultTableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        resultTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        resultTableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        resultTableView.dataSource = self
+        resultTableView.delegate = self
       }
     
     private func loadData(){
@@ -117,7 +117,7 @@ class DetailViewController: BaseViewController {
     }
     
     private func showRepos(){
-        tableView.reloadData()
+        resultTableView.reloadData()
     }
 }
 

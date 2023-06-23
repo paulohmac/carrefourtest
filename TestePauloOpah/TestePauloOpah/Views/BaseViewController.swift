@@ -9,7 +9,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
     private let activityView = UIActivityIndicatorView(style: .large)
-    internal let tableView = UITableView()
+    internal let resultTableView = UITableView()
     internal var safeArea = UILayoutGuide()
     
     override func viewDidLoad() {
