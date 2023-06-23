@@ -1,8 +1,13 @@
 # carrefourtest
-Pratice test of iOS swift
-Software Archtecture = MVVM
-Network libray = Alamofire + Moya + asynchronous functions(swift 5.5 and above) + Codable
-Views in ViewCode
-Stevia for autolayout
-UnitTest
+**iOS Swift with GitHub API pratical test**\
+\
+Software Archtecture = MVVM\
+Network libray = Alamofire + Moya + Asynchronous functions(Swift 5.5 and above) + Codable\
+Views created with ViewCode\
+Stevia for autolayout\
+Xctest for UnitTest
+
+**Future features**\
+-Firebase feature toggle\
+-XcTestUi
 
