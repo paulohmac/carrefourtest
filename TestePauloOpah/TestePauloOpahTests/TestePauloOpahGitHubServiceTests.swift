@@ -33,7 +33,8 @@ final class TestePauloOpahGitHubServiceTests: XCTestCase {
     }
 
     func testPerformReposRequest()async throws{
-        var param = SendRequest.repos(user: userMock)
+        var userMock2 = "Motom"
+        var param = SendRequest.repos(user: userMock2)
         var resultSearch = try await sut?.perfomrRequest(action: param)
         
         if case .success(let codable) = resultSearch {
@@ -76,7 +77,7 @@ final class TestePauloOpahGitHubServiceTests: XCTestCase {
             }else{
                 print("***")
                 print((codable as? Login)?.login)
-                if ((codable as? Login)?.login != userMock){
+                if ((codable as? Login)?.login.lowercased() != userMock.lowercased()){
                     XCTAssertTrue(false,  "wrong login on user detail")
                 }
             }

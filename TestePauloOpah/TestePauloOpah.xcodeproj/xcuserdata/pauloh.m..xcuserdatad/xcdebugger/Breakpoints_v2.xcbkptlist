@@ -129,82 +129,36 @@
             endingLineNumber = "56"
             landmarkName = "loadData()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FE33A9E8-9C22-4FEE-B707-27CE252F4BB7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestePauloOpah/ViewModels/DetailViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "getUserRepos(user:)"
-            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FE33A9E8-9C22-4FEE-B707-27CE252F4BB7 - d95fac43c85c9ad0"
+                  uuid = "B13671C2-A50C-43E7-B57C-7F373B31A014 - 14bd504230efcaac"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
                   moduleName = "TestePauloOpah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "282">
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "85">
                </Location>
                <Location
-                  uuid = "FE33A9E8-9C22-4FEE-B707-27CE252F4BB7 - d95fac43c85c9ad0"
+                  uuid = "B13671C2-A50C-43E7-B57C-7F373B31A014 - 63fad6c2cbe5e3cc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "740">
-               </Location>
-               <Location
-                  uuid = "FE33A9E8-9C22-4FEE-B707-27CE252F4BB7 - e64c3692f6252ab6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TestePauloOpahTests.DetailViewController.loadData() -&gt; ()"
                   moduleName = "TestePauloOpahTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "282">
-               </Location>
-               <Location
-                  uuid = "FE33A9E8-9C22-4FEE-B707-27CE252F4BB7 - e64c3692f6252ab6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpahTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "668">
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "85">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -225,48 +179,48 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 14bd504230eff750"
+                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - d584f41c9458bc92"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
                   moduleName = "TestePauloOpah"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "96">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "120">
                </Location>
                <Location
-                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 5a71e9c456d9d363"
+                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 5a71e9c456d9d1b6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
+                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
                   moduleName = "TestePauloOpah"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
                   offsetFromSymbolStart = "34">
                </Location>
                <Location
-                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 7f2eb704e40a134e"
+                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 3835dbdd49e7d8a0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
                   moduleName = "TestePauloOpah"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
                   offsetFromSymbolStart = "39">
                </Location>
                <Location
@@ -313,144 +267,6 @@
                   startingLineNumber = "63"
                   endingLineNumber = "63"
                   offsetFromSymbolStart = "39">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestePauloOpah/ViewModels/DetailViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "getUserRepos(user:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - 887f2211a5f3d6b9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "126">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - 718955f08214765d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for TestePauloOpah.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - d95fac43c85c9ab7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "206">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - 41cfeb541de83cb6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - a36a68911c0396d3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpahTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "126">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - 25e2f71bab81e9dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for TestePauloOpahTests.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpahTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - e64c3692f6252ad1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpahTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "206">
-               </Location>
-               <Location
-                  uuid = "D56DF9B3-554A-45E5-9CA8-7D70015E841E - b8b3dd6c3b4988d0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for TestePauloOpahTests.DetailGitViewModel.getUserRepos(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpahTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "112">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -569,15 +385,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A03AF9BE-75EE-4CDC-837F-B5D30E6CD1E2"
+            uuid = "80729DAD-F8DD-4295-BE3C-E503DE7B406E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestePauloOpahTests/ServiceFactoryMock.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "createReposListResul()"
             landmarkType = "7">
          </BreakpointContent>
@@ -585,92 +401,107 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4D3AD892-101F-4E11-88A3-30F84CF3F1A3"
+            uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+            filePath = "TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "testValidCodable()"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testPerformReposRequest()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4D3AD892-101F-4E11-88A3-30F84CF3F1A3 - 154242ef92efdda"
+                  uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE - 81ba3944ac07d753"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.TestePauloOpahGitHubServiceTests.testPerformReposRequest() async throws -&gt; ()"
                   moduleName = "TestePauloOpahTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "483">
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "300">
                </Location>
                <Location
-                  uuid = "4D3AD892-101F-4E11-88A3-30F84CF3F1A3 - 3476ca37010811fa"
+                  uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE - de78fa6c74a51751"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.TestePauloOpahGitHubServiceTests.testPerformReposRequest() async throws -&gt; ()"
                   moduleName = "TestePauloOpahTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "34">
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "206">
                </Location>
                <Location
-                  uuid = "4D3AD892-101F-4E11-88A3-30F84CF3F1A3 - b01304a078cbbfd8"
+                  uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE - b91824982895b750"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  symbolName = "(4) suspend resume partial function for TestePauloOpahTests.TestePauloOpahGitHubServiceTests.testPerformReposRequest() async throws -&gt; ()"
                   moduleName = "TestePauloOpahTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "197">
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
-                  uuid = "4D3AD892-101F-4E11-88A3-30F84CF3F1A3 - 154242ef92efdda"
+                  uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE - 81ba3944ac07d78c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.TestePauloOpahGitHubServiceTests.testPerformReposRequest() async throws -&gt; ()"
                   moduleName = "TestePauloOpahTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "467">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "367">
                </Location>
                <Location
-                  uuid = "4D3AD892-101F-4E11-88A3-30F84CF3F1A3 - b01304a078cbbfd8"
+                  uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE - de78fa6c74a5178e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.TestePauloOpahGitHubServiceTests.testPerformReposRequest() async throws -&gt; ()"
                   moduleName = "TestePauloOpahTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "190">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "223">
+               </Location>
+               <Location
+                  uuid = "6C5AA78D-7D21-4ADB-B6F5-E51C3113B3CE - b91824982895b78f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for TestePauloOpahTests.TestePauloOpahGitHubServiceTests.testPerformReposRequest() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahGitHubServiceTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "83">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -678,17 +509,141 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "20C2B7C7-DA6B-4722-B0B4-A05B915F5ACE"
+            uuid = "AADA6FA2-8EF4-4051-ABE7-B388ECF516E7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestePauloOpahTests/ServiceFactoryMock.swift"
+            filePath = "TestePauloOpah/ViewModels/DetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "createDetailResul()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getUserRepos(user:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6931BD9-A7D8-4FE5-B16E-AB463A6CA3D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestePauloOpah/ViewModels/DetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "DetailGitViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "testValidCodable()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107 - 154242ef92efc2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2471">
+               </Location>
+               <Location
+                  uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107 - 154242ef92efc2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2853">
+               </Location>
+               <Location
+                  uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107 - b01304a078cbbe2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1913">
+               </Location>
+               <Location
+                  uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107 - b01304a078cbbe2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2295">
+               </Location>
+               <Location
+                  uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107 - 2fdee525f7e97028"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "145">
+               </Location>
+               <Location
+                  uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107 - 2fdee525f7e97028"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for TestePauloOpahTests.TestePauloOpahDetailMainViewModelTests.testValidCodable() async throws -&gt; ()"
+                  moduleName = "TestePauloOpahTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpahTests/TestePauloOpahDetailMainViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "594">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
