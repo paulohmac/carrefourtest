@@ -15,10 +15,13 @@ protocol DetailViewModel {
 
     var userDetail: Login? {get}
 
+    var errorHadling: ErrorHandling? { get set }
+
     func getUserDetail(user : String) async
     
     func getUserRepos(user : String) async
     
+
 }
 
 extension DetailViewModel{
@@ -29,7 +32,8 @@ extension DetailViewModel{
 }
 
 class DetailGitViewModel : DetailViewModel{
-
+    var errorHadling: ErrorHandling?
+    
     var repos : [Repo]?
 
     private let service : GitHubService
@@ -50,10 +54,10 @@ class DetailGitViewModel : DetailViewModel{
             if case let .success(data) = ret,let lgn = data as? Login  {
                 userDetail = lgn
             }else if case let .error(error) = ret {
-                showError(error: error.localizedDescription)
+                showError(error: error)
             }
        }catch {
-           showError(error: error.localizedDescription)
+           showError(error: error)
         }
     }
     
@@ -63,14 +67,15 @@ class DetailGitViewModel : DetailViewModel{
             if case let .success(data) = ret,let lgn = data as? [Repo]  {
                 repos = lgn
             }else if case let .error(error) = ret {
-                showError(error: error.localizedDescription)
+                showError(error: error)
             }
        }catch {
-           showError(error: error.localizedDescription)
+           showError(error: error)
         }
     }
     
-    public func showError(error : String){
+    public func showError(error : Error){
+        errorHadling?.showError(msg: error)
         print(error)
     }
 }

@@ -13,6 +13,8 @@ protocol MainViewModel{
 
     var users : [Login]? {get}
 
+    var errorHadling: ErrorHandling? { get set }
+
     func getTotalLogins()->Int
 
     func getLogin(position : Int)->Login?
@@ -27,6 +29,8 @@ protocol MainViewModel{
 }
 
 class MainGitHubViewModel : MainViewModel{
+    var errorHadling: ErrorHandling?
+    
     
     private let service : GitHubService
 
@@ -44,10 +48,10 @@ class MainGitHubViewModel : MainViewModel{
             if case let .success(data) = ret,let logins = data as? [Login]  {
                 users = logins
             }else if case let .error(error) = ret {
-                showError(error: error.localizedDescription)
+                showError(error: error)
             }
        }catch {
-           showError(error: error.localizedDescription)
+           showError(error: error)
         }
     }
 
@@ -57,14 +61,15 @@ class MainGitHubViewModel : MainViewModel{
             if case let .success(data) = ret,let logins = data as? SearchResult  {
                 users = logins.items
             }else if case let .error(error) = ret {
-                showError(error: error.localizedDescription)
+                showError(error: error)
             }
        }catch {
-           showError(error: error.localizedDescription)
+           showError(error: error)
         }
     }
     
-    public func showError(error : String){
+    public func showError(error : Error){
+        errorHadling?.showError(msg: error)
         print(error)
     }
     

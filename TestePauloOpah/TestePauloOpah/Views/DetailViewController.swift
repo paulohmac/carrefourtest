@@ -18,6 +18,7 @@ class DetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.errorHadling = self
         loadData()
         setupTableView()
         setupHeader()

@@ -15,6 +15,7 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         view.backgroundColor = .white
         safeArea = view.layoutMarginsGuide
+        viewModel.errorHadling = self
         setupEditText()
         setupTableView()
         loadData()
@@ -74,7 +75,7 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
    }
      
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         viewModel.openDetail(id: "\(viewModel.getLogin(position: indexPath.row)?.login)")
+         viewModel.openDetail(id: viewModel.getLogin(position: indexPath.row)?.login ?? "")
      }
 }
 
