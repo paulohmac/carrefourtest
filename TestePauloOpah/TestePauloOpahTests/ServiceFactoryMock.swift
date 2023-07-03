@@ -15,9 +15,9 @@ class ServiceFactoryInvalidResultMock: Factory {
 }
 
 class GitHubServiceInvalidResultMock : GitHubService{
-    func perfomrRequest(action: SendRequest) async throws -> RequestResult? {
-            return RequestResult.success(codable: StubCodable())
-    }
+    func performRequest(action: SendRequest) async throws -> RequestResult? {
+        return RequestResult.success(codable: StubCodable())
+ }
 }
 
 
@@ -29,7 +29,7 @@ class ServiceFactoryValidResultMock: Factory {
 }
 
 class GitHubServiceValidResultMock : GitHubService{
-    func perfomrRequest(action: SendRequest) async throws -> RequestResult? {
+    func performRequest(action: SendRequest) async throws -> RequestResult? {
 
         if case .search(_) = action {
 //            return try await provider.async.sendRequest(.search(param: value), retType: SearchResult.self)

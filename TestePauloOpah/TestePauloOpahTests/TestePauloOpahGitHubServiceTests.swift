@@ -17,7 +17,7 @@ final class TestePauloOpahGitHubServiceTests: XCTestCase {
     
     func testPerformSearchRequest()async throws{
         var param = SendRequest.search(param: userMock)
-        var resultSearch = try await sut?.perfomrRequest(action: param)
+        var resultSearch = try await sut?.performRequest(action: param)
         
         if case .success(let codable) = resultSearch {
             if !(codable is SearchResult){
@@ -35,7 +35,7 @@ final class TestePauloOpahGitHubServiceTests: XCTestCase {
     func testPerformReposRequest()async throws{
         var userMock2 = "Motom"
         var param = SendRequest.repos(user: userMock2)
-        var resultSearch = try await sut?.perfomrRequest(action: param)
+        var resultSearch = try await sut?.performRequest(action: param)
         
         if case .success(let codable) = resultSearch {
             if !(codable is [Repo]){
@@ -52,7 +52,7 @@ final class TestePauloOpahGitHubServiceTests: XCTestCase {
 
     func testPerformUserListRequest()async throws{
         var param = SendRequest.list
-        var resultSearch = try await sut?.perfomrRequest(action: param)
+        var resultSearch = try await sut?.performRequest(action: param)
         
         if case .success(let codable) = resultSearch {
             if !(codable is [Login]){
@@ -69,7 +69,7 @@ final class TestePauloOpahGitHubServiceTests: XCTestCase {
 
     func testPerformUserDetailRequest()async throws{
         var param = SendRequest.detail(id: userMock)
-        var resultSearch = try await sut?.perfomrRequest(action: param)
+        var resultSearch = try await sut?.performRequest(action: param)
         
         if case .success(let codable) = resultSearch {
             if !(codable is Login){
