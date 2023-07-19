@@ -38,6 +38,14 @@
 		8C7B2C8B2A45217D00ECE4AB /* TestePauloOpahDetailMainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C8A2A45217D00ECE4AB /* TestePauloOpahDetailMainViewModelTests.swift */; };
 		8C7B2C8D2A4527FE00ECE4AB /* TestePauloOpahMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C8C2A4527FE00ECE4AB /* TestePauloOpahMainCoordinator.swift */; };
 		8C7B2C8F2A452D0700ECE4AB /* TestePauloOpahGitHubServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C8E2A452D0700ECE4AB /* TestePauloOpahGitHubServiceTests.swift */; };
+		8C7B2C922A524FEF00ECE4AB /* Mona-Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B2C912A524FEF00ECE4AB /* Mona-Sans.ttf */; };
+		8C7B2C932A524FEF00ECE4AB /* Mona-Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B2C912A524FEF00ECE4AB /* Mona-Sans.ttf */; };
+		8C7B2C952A52500200ECE4AB /* Mona-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B2C942A52500200ECE4AB /* Mona-Sans-Bold.ttf */; };
+		8C7B2C962A52500200ECE4AB /* Mona-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B2C942A52500200ECE4AB /* Mona-Sans-Bold.ttf */; };
+		8C7B2C982A52515500ECE4AB /* UiLabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C972A52515500ECE4AB /* UiLabel+Extension.swift */; };
+		8C7B2C992A52515500ECE4AB /* UiLabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C972A52515500ECE4AB /* UiLabel+Extension.swift */; };
+		8C7B2C9B2A52531600ECE4AB /* UiColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C9A2A52531500ECE4AB /* UiColor+Extension.swift */; };
+		8C7B2C9C2A52531600ECE4AB /* UiColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B2C9A2A52531500ECE4AB /* UiColor+Extension.swift */; };
 		8CA117272A43A90600014381 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA117262A43A90600014381 /* BaseViewController.swift */; };
 		8CAFA9E92A2825FF0040AA97 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFA9E82A2825FF0040AA97 /* DetailViewController.swift */; };
 		8CAFA9ED2A28264E0040AA97 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFA9EC2A28264E0040AA97 /* MainCoordinator.swift */; };
@@ -84,6 +92,10 @@
 		8C7B2C8A2A45217D00ECE4AB /* TestePauloOpahDetailMainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestePauloOpahDetailMainViewModelTests.swift; sourceTree = "<group>"; };
 		8C7B2C8C2A4527FE00ECE4AB /* TestePauloOpahMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestePauloOpahMainCoordinator.swift; sourceTree = "<group>"; };
 		8C7B2C8E2A452D0700ECE4AB /* TestePauloOpahGitHubServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestePauloOpahGitHubServiceTests.swift; sourceTree = "<group>"; };
+		8C7B2C912A524FEF00ECE4AB /* Mona-Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mona-Sans.ttf"; sourceTree = "<group>"; };
+		8C7B2C942A52500200ECE4AB /* Mona-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mona-Sans-Bold.ttf"; sourceTree = "<group>"; };
+		8C7B2C972A52515500ECE4AB /* UiLabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiLabel+Extension.swift"; sourceTree = "<group>"; };
+		8C7B2C9A2A52531500ECE4AB /* UiColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+Extension.swift"; sourceTree = "<group>"; };
 		8CA117262A43A90600014381 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8CA117362A44811A00014381 /* TestePauloOpahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestePauloOpahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA1173F2A44813500014381 /* TestePauloOpahTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestePauloOpahTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -149,6 +161,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C7B2C902A524FB700ECE4AB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C7B2C942A52500200ECE4AB /* Mona-Sans-Bold.ttf */,
+				8C7B2C912A524FEF00ECE4AB /* Mona-Sans.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		8CA117372A44811A00014381 /* TestePauloOpahTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +215,7 @@
 		8CEC48D02A27EFF700F7E0B3 /* TestePauloOpah */ = {
 			isa = PBXGroup;
 			children = (
+				8C7B2C902A524FB700ECE4AB /* resources */,
 				8CAFAA102A297AA00040AA97 /* Factory */,
 				8CEC49072A27F06000F7E0B3 /* Extensions */,
 				8CEC49062A27F05A00F7E0B3 /* Views */,
@@ -261,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				8CAFAA152A4094010040AA97 /* Alamofire+Extensions.swift */,
+				8C7B2C972A52515500ECE4AB /* UiLabel+Extension.swift */,
+				8C7B2C9A2A52531500ECE4AB /* UiColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,6 +395,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7B2C932A524FEF00ECE4AB /* Mona-Sans.ttf in Resources */,
+				8C7B2C962A52500200ECE4AB /* Mona-Sans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CEC48DE2A27EFFB00F7E0B3 /* LaunchScreen.storyboard in Resources */,
+				8C7B2C952A52500200ECE4AB /* Mona-Sans-Bold.ttf in Resources */,
 				8CEC48DB2A27EFFB00F7E0B3 /* Assets.xcassets in Resources */,
+				8C7B2C922A524FEF00ECE4AB /* Mona-Sans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7B2C9C2A52531600ECE4AB /* UiColor+Extension.swift in Sources */,
 				8C7B2C742A4495B900ECE4AB /* Alamofire+Extensions.swift in Sources */,
 				8C7B2C722A44957000ECE4AB /* TesteViewControllerTest.swift in Sources */,
 				8C7B2C7E2A4495C600ECE4AB /* Configuration.swift in Sources */,
@@ -406,6 +435,7 @@
 				8C7B2C712A44957000ECE4AB /* TestePauloOpahTests.swift in Sources */,
 				8C7B2C8B2A45217D00ECE4AB /* TestePauloOpahDetailMainViewModelTests.swift in Sources */,
 				8C7B2C802A4495C800ECE4AB /* MainCoordinator.swift in Sources */,
+				8C7B2C992A52515500ECE4AB /* UiLabel+Extension.swift in Sources */,
 				8C7B2C7D2A4495C600ECE4AB /* GitHubMoyaTarget.swift in Sources */,
 				8C7B2C822A4495CD00ECE4AB /* AppDelegate.swift in Sources */,
 				8C7B2C7F2A4495C600ECE4AB /* GitHubService.swift in Sources */,
@@ -425,7 +455,9 @@
 				8CAFA9F52A282A120040AA97 /* GitHubMoyaTarget.swift in Sources */,
 				8CAFA9ED2A28264E0040AA97 /* MainCoordinator.swift in Sources */,
 				8CA117272A43A90600014381 /* BaseViewController.swift in Sources */,
+				8C7B2C9B2A52531600ECE4AB /* UiColor+Extension.swift in Sources */,
 				8CAFA9F22A282A120040AA97 /* Configuration.swift in Sources */,
+				8C7B2C982A52515500ECE4AB /* UiLabel+Extension.swift in Sources */,
 				8CAFAA0D2A297A850040AA97 /* GitHubService.swift in Sources */,
 				8CEC48D22A27EFF700F7E0B3 /* AppDelegate.swift in Sources */,
 				8CAFA9E92A2825FF0040AA97 /* DetailViewController.swift in Sources */,

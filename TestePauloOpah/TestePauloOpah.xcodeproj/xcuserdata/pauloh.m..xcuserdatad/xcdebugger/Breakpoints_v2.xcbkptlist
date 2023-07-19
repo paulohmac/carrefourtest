@@ -46,8 +46,8 @@
             filePath = "TestePauloOpah/Views/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
             landmarkType = "7">
             <Locations>
@@ -113,85 +113,6 @@
             endingLineNumber = "53"
             landmarkName = "task"
             landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B13671C2-A50C-43E7-B57C-7F373B31A014"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestePauloOpah/Views/DetailViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestePauloOpah/Views/DetailViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - d584f41c9458bcb3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "120">
-               </Location>
-               <Location
-                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 5a71e9c456d9d197"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  uuid = "DDB3614D-CEEE-4532-8B9A-02DE88410DD8 - 3835dbdd49e7d881"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in TestePauloOpah.DetailViewController.loadData() -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Views/DetailViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "39">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -315,8 +236,8 @@
             filePath = "TestePauloOpahTests/ServiceFactoryMock.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "createReposListResul()"
             landmarkType = "7">
          </BreakpointContent>
@@ -432,22 +353,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AADA6FA2-8EF4-4051-ABE7-B388ECF516E7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestePauloOpah/ViewModels/DetailViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "getUserRepos(user:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "90DCC333-0684-47FC-AC07-6D3D8517A107"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -556,77 +461,111 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "22BE8DAE-F736-4DC2-9749-3EC286C0EFAD"
+            uuid = "1CA9DDDB-74BD-46FE-B0E7-848ADFDBFEC9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestePauloOpah/Views/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3044C16F-8054-4938-8A95-E2EE17E5DDD5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestePauloOpah/ViewModels/DetailViewModel.swift"
+            filePath = "TestePauloOpah/Coordinator/MainCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "getUserDetail(user:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "openDetail(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52124F51-F634-43A6-8A72-7E49025FBB43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestePauloOpah/Views/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EDE3584-33AE-434C-9654-B060D459C323"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestePauloOpah/Views/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "didMove(toParent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5957153-2068-4A81-B764-8E681E457E50"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestePauloOpah/Coordinator/MainCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "openDetail(id:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "22BE8DAE-F736-4DC2-9749-3EC286C0EFAD - 29dcc2650d027781"
+                  uuid = "F5957153-2068-4A81-B764-8E681E457E50 - 225ec2d7559a3bea"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserDetail(user: Swift.String) async -&gt; ()"
+                  symbolName = "TestePauloOpah.MainCoordinator.openDetail(id: Swift.String) -&gt; ()"
                   moduleName = "TestePauloOpah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Coordinator/MainCoordinator.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "127">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "390">
                </Location>
                <Location
-                  uuid = "22BE8DAE-F736-4DC2-9749-3EC286C0EFAD - 83f0d230bbe49765"
+                  uuid = "F5957153-2068-4A81-B764-8E681E457E50 - 225ec2d7559a3bea"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for TestePauloOpah.DetailGitViewModel.getUserDetail(user: Swift.String) async -&gt; ()"
+                  symbolName = "TestePauloOpah.MainCoordinator.openDetail(id: Swift.String) -&gt; ()"
                   moduleName = "TestePauloOpah"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
+                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/Coordinator/MainCoordinator.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "22BE8DAE-F736-4DC2-9749-3EC286C0EFAD - 77d2d2e7b0eb3b8f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserDetail(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "213">
-               </Location>
-               <Location
-                  uuid = "22BE8DAE-F736-4DC2-9749-3EC286C0EFAD - 50efdd2702785d8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for TestePauloOpah.DetailGitViewModel.getUserDetail(user: Swift.String) async -&gt; ()"
-                  moduleName = "TestePauloOpah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pauloh.m./Desktop/development/testeOpah/carrefourtest/TestePauloOpah/TestePauloOpah/ViewModels/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "82">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "424">
                </Location>
             </Locations>
          </BreakpointContent>

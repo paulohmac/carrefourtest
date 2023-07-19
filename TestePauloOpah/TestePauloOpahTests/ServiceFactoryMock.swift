@@ -32,16 +32,12 @@ class GitHubServiceValidResultMock : GitHubService{
     func performRequest(action: SendRequest) async throws -> RequestResult? {
 
         if case .search(_) = action {
-//            return try await provider.async.sendRequest(.search(param: value), retType: SearchResult.self)
             return RequestResult.success(codable: MockedCodableFactory.createSearchResul())
         }else if case .list = action {
-//            return try await provider.async.sendRequest(.list, retType: [Login].self)
             return RequestResult.success(codable: MockedCodableFactory.createListResul())
         }else if case .detail(_) = action {
-//            return try await provider.async.sendRequest(.detail(id: idProfile), retType: Login.self)
             return RequestResult.success(codable: MockedCodableFactory.createDetailResul())
         }else if case .repos(_) = action {
-//            return try await provider.async.sendRequest(.repos(user: user), retType: [Repo].self)
             return RequestResult.success(codable: MockedCodableFactory.createReposListResul())
         }else{
             return nil

@@ -24,27 +24,47 @@ protocol CoordinatorSpy{
 }
 
 class MainCoordinator : Coordinator {
-
+    static var instance : Coordinator?
+    
     static func getInstance() -> Coordinator {
-        return MainCoordinator()
+        return  instance ?? MainCoordinator()
     }
     
     var spy: CoordinatorSpy?
     
-    private static var instance: Coordinator = MainCoordinator()
+    var navigationViewController : UINavigationController?
     
-    private func getRootViewController()->UINavigationController{
-        let scenes = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        let window = scenes?.windows.last
-        return window?.rootViewController as? UINavigationController ?? UINavigationController()
+    private func getRootViewController()->UINavigationController? {
+        if navigationViewController != nil {
+            return navigationViewController
+        }else{
+            let scenes = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            let window = scenes?.windows.last
+            let navigator =  window?.rootViewController
+            
+            if navigator is UINavigationController {
+                navigationViewController = navigator as? UINavigationController
+            }else{
+                if let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow }), let navigationController = keyWindow.rootViewController as? UINavigationController {
+                    navigationViewController =  navigationController
+                }
+            }
+            return navigationViewController
+        }
     }
     
     public func openDetail(id: String){
         let detailViewController  = DetailViewController()
         detailViewController.idLogin = id
         detailViewController.viewModel = DetailGitViewModel(factory: ServiceFactory())
-        getRootViewController().pushViewController(detailViewController, animated: true)
-        spy?.detailViewControllerOpened()
+
+        if let rootViewController = getRootViewController() {
+            rootViewController.pushViewController(detailViewController, animated: true)
+        }
+
+        if let spy = spy {
+            spy.detailViewControllerOpened()
+        }
     }
     
 }

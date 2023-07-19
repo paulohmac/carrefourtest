@@ -23,6 +23,17 @@ class DetailViewController: BaseViewController {
         setupTableView()
         setupHeader()
     }
+    
+    override func didMove(toParent parent: UIViewController?) {
+        super.didMove(toParent: parent)
+
+        if parent == nil {
+            let scenes = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            let window = scenes?.windows.last
+            var navigator =  window?.rootViewController as? UINavigationController
+            navigator?.popViewController(animated: true)
+        }
+    }
 
     private func setupHeader(){
         headerStack.axis = .vertical
@@ -82,12 +93,15 @@ class DetailViewController: BaseViewController {
         namelbl.center = CGPoint(x: 160, y: 285)
         namelbl.textAlignment = .center
         namelbl.text = idLogin
+        namelbl.setDefaultFont()
+
         stackView.addArrangedSubview(namelbl)
         
         let urllbl = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
         urllbl.center = CGPoint(x: 160, y: 285)
         urllbl.textAlignment = .center
         urllbl.text = (viewModel?.userDetail?.url ?? "")
+        urllbl.setDefaultFont()
         stackView.addArrangedSubview(urllbl)
         
         let avatar = UIImage()
@@ -130,6 +144,7 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = viewModel?.repos?[indexPath.row].url
+        cell.textLabel?.setDefaultFont()
         return cell
     }
     

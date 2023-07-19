@@ -15,8 +15,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         safeArea = view.layoutMarginsGuide
-        
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(hexString: "#F6F8FA")
     }
 
     internal func activityIndicatorShould(appear: Bool){

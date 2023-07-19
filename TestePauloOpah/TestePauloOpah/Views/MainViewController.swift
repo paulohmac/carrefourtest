@@ -13,7 +13,7 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(hexString:"#f6f8fA")
         safeArea = view.layoutMarginsGuide
         viewModel.errorHadling = self
         setupEditText()
@@ -44,7 +44,7 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     private func setupEditText(){
         searchTextField =  UITextField(frame: CGRect(x: 20, y: 100, width: 300, height: 40))
-        searchTextField.placeholder = "Enter text here"
+        searchTextField.placeholder = "Enter github user login"
         searchTextField.font = UIFont.systemFont(ofSize: 15)
         searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
         searchTextField.autocorrectionType = UITextAutocorrectionType.no
@@ -53,6 +53,7 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         searchTextField.clearButtonMode = UITextField.ViewMode.whileEditing
         searchTextField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         searchTextField.delegate = self
+        searchTextField.setDefaultFont()
 
         searchTextField.top(8)
         searchTextField.right(16)
@@ -71,6 +72,8 @@ class MainViewController: BaseViewController, UITableViewDelegate, UITableViewDa
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
        cell.textLabel?.text = viewModel.getLogin(position: indexPath.row)?.login
+       cell.textLabel?.setDefaultFont()
+
      return cell
    }
      

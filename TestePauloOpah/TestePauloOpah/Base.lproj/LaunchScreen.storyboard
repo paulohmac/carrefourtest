@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mona-Sans-Bold.ttf">
+            <string>Mona-Sans-Bold</string>
+        </array>
+        <array key="Mona-Sans.ttf">
+            <string>MonaSans-Thin_Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -17,34 +25,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste Apis GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-7Z-eb9">
-                                <rect key="frame" x="92.333333333333329" y="228" width="208.33333333333337" height="32.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="84.333333333333329" y="413" width="224.33333333333337" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" name="MonaSans-Thin_Regular" family="Mona Sans" pointSize="27"/>
+                                <color key="textColor" red="0.14348709579999999" green="0.13310235740000001" blue="0.17614921929999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Paulo Henrique M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRh-Nz-Jq6">
-                                <rect key="frame" x="125.33333333333333" y="417.66666666666669" width="142.33333333333337" height="17"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="githubicon" translatesAutoresizingMaskIntoConstraints="NO" id="g57-pw-qGv">
+                                <rect key="frame" x="76.666666666666686" y="129" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ehP-Zu-T7l"/>
+                                    <constraint firstAttribute="height" constant="128" id="vu0-9f-fL9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Paulo Henrique Mach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRh-Nz-Jq6">
+                                <rect key="frame" x="112.66666666666669" y="514" width="168" height="13.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Mona-Sans-Bold" family="Mona-Sans" pointSize="14"/>
+                                <color key="textColor" red="0.12549019607843137" green="0.13725490196078433" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CRh-Nz-Jq6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JRx-qd-MxU"/>
-                            <constraint firstItem="vIg-7Z-eb9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="Tbl-dG-pBs"/>
-                            <constraint firstItem="vIg-7Z-eb9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ita-sS-amu"/>
-                            <constraint firstItem="CRh-Nz-Jq6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kMl-og-eTJ"/>
+                            <constraint firstItem="CRh-Nz-Jq6" firstAttribute="top" secondItem="vIg-7Z-eb9" secondAttribute="bottom" constant="74.670000000000002" id="Ncd-fj-oxu"/>
+                            <constraint firstItem="vIg-7Z-eb9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Vhh-Df-cBf"/>
+                            <constraint firstItem="CRh-Nz-Jq6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fYU-TY-nQH"/>
+                            <constraint firstItem="vIg-7Z-eb9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gfA-7j-RHi"/>
+                            <constraint firstItem="g57-pw-qGv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="pgR-XX-Qhz"/>
+                            <constraint firstItem="g57-pw-qGv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uEi-xF-uUI"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="githubicon" width="560" height="560"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
